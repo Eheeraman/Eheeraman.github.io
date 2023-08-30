@@ -1,0 +1,9 @@
+'''
+This expense tracker app will allow the user to enter their expenses.
+The app saves the expense data in a CSV file, summarizes expense
+totals, and shows the remaining budget.
+
+User must adjust the monthly budget in tracker_main.py and it must be
+positive.
+User must enter a number when selecting an expense category.
+'''
