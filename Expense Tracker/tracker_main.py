@@ -108,8 +108,11 @@ def give_summary(expenses_file_path, budget):
     remaining_days = days_in_month - current_day.day
 
     # shows the daily budget for the rest of the month
-    daily_budget = remaining_budget / remaining_days
-    print(f" You're daily budget is now ${daily_budget:.2f}")
+    if remaining_days == 0:
+        print(f" You're daily budget is now ${remaining_budget:.2f}")
+    else:
+        daily_budget = remaining_budget / remaining_days
+        print(f" You're daily budget is now ${daily_budget:.2f}")
 
 
 if __name__ == "__main__":
